@@ -250,6 +250,7 @@ DELETE_ORGINAL_APK() {
 # 合入MOD
 PATCH_APK() {
     echo "正在合入MOD补丁..."
+    mkdir -p ./JMBQ/assets
     cp -r "${DOWNLOAD_DIR}/JMBQ/assets/." "${DOWNLOAD_DIR}/DECODE_Output/assets/"
     if [ $? -ne 0 ]; then
         echo "错误: 复制资源文件失败！"
